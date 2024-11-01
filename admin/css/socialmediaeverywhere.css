@@ -1,0 +1,64 @@
+#sme-settings {
+  width: 1000px;
+  padding: 15px; }
+  #sme-settings header > h3 {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0.7em; }
+    #sme-settings header > h3:nth-of-type(1) {
+      margin-left: 0; }
+    #sme-settings header > h3:nth-of-type(-1) {
+      margin-right: 0; }
+    #sme-settings header > h3.active {
+      text-decoration: underline; }
+  #sme-settings main {
+    padding: 10px 25px;
+    background-color: #FCFCFC; }
+    #sme-settings main > div {
+      display: none; }
+      #sme-settings main > div.active {
+        display: block; }
+    #sme-settings main .settings label {
+      display: inline-block;
+      width: 250px; }
+    #sme-settings main .settings input[type="text"] {
+      width: 350px; }
+    #sme-settings main .settings .settings-section .setting-row {
+      margin-bottom: 5px; }
+      #sme-settings main .settings .settings-section .setting-row .fa-question {
+        top: -1px;
+        position: relative; }
+        #sme-settings main .settings .settings-section .setting-row .fa-question:hover .tooltip {
+          visibility: visible;
+          opacity: 1;
+          transform: translate(-50%, -110%); }
+        #sme-settings main .settings .settings-section .setting-row .fa-question .tooltip {
+          color: #FCFCFC;
+          background-color: #444444;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          padding: 0.8rem 1rem;
+          border-radius: 3px;
+          opacity: 0;
+          pointer-events: none;
+          transform: translate(-50%, -100%);
+          transition: all 0.3s ease;
+          z-index: 5;
+          width: 250px; }
+          #sme-settings main .settings .settings-section .setting-row .fa-question .tooltip .tooltip-title {
+            margin-top: 5px;
+            display: inline-block;
+            border-bottom: 1px solid #FCFCFC; }
+          #sme-settings main .settings .settings-section .setting-row .fa-question .tooltip ul {
+            font-size: 0.9em;
+            margin: 2px 0;
+            padding: 0; }
+            #sme-settings main .settings .settings-section .setting-row .fa-question .tooltip ul li {
+              margin-bottom: 2px; }
+    #sme-settings main .settings .settings-section:not(:last-of-type) {
+      padding: 0 0 10px 0;
+      border-bottom: 1px solid #EEEEEE; }
+    #sme-settings main .settings .settings-section:nth-of-type(n+1) {
+      padding: 10px 0 0 0; }
